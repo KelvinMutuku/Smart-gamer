@@ -71,7 +71,7 @@ div.right-items{
 }
 button{
     padding: 10px;
-    background: black;
+    background: transparent;
     border: 3px solid #b6adad;
     border-radius: 35px;
 }
