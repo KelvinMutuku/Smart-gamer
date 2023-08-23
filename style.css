@@ -8,7 +8,14 @@ section.main{
     height: 100%;
     width: 100%;
     overflow-y: hidden;
-    background-image: url(img/pubg1.jpg);
+    background-image: url(img/pubg2.jpg);
+}
+section.main-2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    background-image: url(img/pubg2.jpg);
 }
 section.left{
     position: absolute;
@@ -24,7 +31,7 @@ div.left-items{
 h1,h2{
     color: white;
 }
-h1.left-h1{
+/* h1.left-h1{
     position: relative;
     top: 20%;
     left: 40%;
@@ -33,12 +40,12 @@ h2.left-h2{
     position: relative;
     top: 60%;
     left: 40%;
-}
-section.right{
+} */
+section.center{
     position: absolute;
     height: 100%;
     width: 50%;
-    left: 50%;
+    left: 25%;
 }
 div.right-items{
     position: absolute;
@@ -71,9 +78,9 @@ div.right-items{
 }
 button{
     padding: 10px;
-    background: transparent;
+    background: black;
     border: 3px solid #b6adad;
-    border-radius: 35px;
+    border-radius: 0px;
 }
 button:hover{
     cursor: pointer;
@@ -83,28 +90,66 @@ input{
     left: 240px;
     background: black;
     border: 3px solid #181616;
-    border-radius: 35px;
+    border-radius: 0px;
 }
 input::placeholder{
     color: #fff;
 }
+input[type="text"]{
+    color: #fff;
+}
+input[type="password"]{
+    color: #fff;
+}
+input[type="email"]{
+    color: #fff;
+}
+input.first-name{
+    position: absolute;
+    top: 90px;
+    left: 240px;
+    width: 190px;
+    height: 30px;
+}
+input.last-name{
+    position: absolute;
+    top: 140px;
+    left: 240px;
+    width: 190px;
+    height: 30px;
+}
+input.id-no{
+    position: absolute;
+    top: 190px;
+    left: 240px;
+    width: 190px;
+    height: 30px;
+}
 input.passwd{
     position: absolute;
-    top: 300px;
+    top: 290px;
     left: 240px;
     width: 190px;
     height: 30px;
 }
 input.email{
     position: absolute;
-    top: 250px;
+    top: 240px;
     left: 240px;
     width: 190px;
     height: 30px;
 }
 .login-btn{
     position: absolute;
-    top: 380px;
+    top: 420px;
+    left: 240px;
+    width: 190px;
+    height: 60px;
+    color: #fff;
+}
+.signup-btn{
+    position: absolute;
+    top: 390px;
     left: 240px;
     width: 190px;
     height: 60px;
@@ -112,24 +157,38 @@ input.email{
 }
 p.remember{
     position: absolute;
-    top: 350px;
+    top: 340px;
     left: 270px;
     width: 190px;
-    color: #fff;
+    color: #181616;
+}
+.login-here{
+    position: absolute;
+    top: 350px;
+    left: 240px;
+    width: 190px;
+    color: #000;
+}
+.signup-here{
+    position: absolute;
+    top: 375px;
+    left: 240px;
+    width: 190px;
+    color: #000;
 }
 .remember-1{
     position: absolute;
-    top: 350px;
+    top: 342px;
 }
 .remember-1:hover{
     cursor: pointer;
 }
 .footer{
     position: absolute;
-    top: 680px;
+    top: 93%;
     width: 100%;
-    height: 160px;
-    background-color: black;
+    height: 43px;
+    background-color: rgb(26, 23, 23);
 }
 .btn-primary{
     border: 3px solid #fff;
@@ -138,90 +197,70 @@ p.remember{
 }
 .text-center1{
     position:absolute;
-    left:45%;
+    left:75%;
     top: 0px;
 }
 .text-center2{
     position: absolute;
-    left: 45%;
-    top: 60px;
+    left: -225%;
+    top: 25%;
     color: #fff;
 }
 /* NAVBAR START */
-.hamburger-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color:transparent;
-    z-index: 99;
-    }
-    
-    .hamburger {
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-    }
-    
-    .hamburger:hover {
-    background-color: #000;
-    cursor: pointer;
-    }
-    
-    .hamburger span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 2px;
-    margin: 4px 0;
-    transition: all 0.3s ease-in-out;
-    }
-    
-    .hamburger span:nth-child(1) {
-    transform: rotate(45deg);
-    }
-    
-    .hamburger span:nth-child(2) {
-    display: none;
-    }
-    
-    .hamburger span:nth-child(3) {
-    transform: rotate(-45deg);
-    }
-    
-    .nav-links {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 15%;
-    background-color: transparent;
-    z-index: 100;
-    }
-    
-    .nav-links li {
-    list-style: none;
+  .navbar {
+    background-color: rgb(26, 23, 23);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
     padding: 10px;
-    }
-    
-    .nav-links li a {
-    color: #000;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-left: 35px;
+  }
+  
+  .nav-list li:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-list li a {
     text-decoration: none;
-    }
-    
-    .nav-links li a:hover {
-    color: #fff;
-    background-color: #000;
-    }
-    
-    .nav-change {
-    display: block;
-    }    
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-list li a:hover {
+    color: gray;
+  }  
 /* NAVBAR END */
+/* MEDIA QUERY START */
+@media screen and (max-width: 1200px) {
+    /* Styles for desktops and laptops */
+  }
+  
+  @media screen and (max-width: 992px) {
+    /* Styles for tablets */
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Styles for smartphones */
+    
+  }
+  @media screen and (max-width: 425px) {
+    /* Styles for smartphones */
+    /* NAVBAR START */
+
+    /* NAVBAR END */
+  }
+  @media screen and (max-width: 375px) {
+    /* Styles for smartphones */
+  }
+  
+/* MEDIA QUERY END */
