@@ -3,44 +3,137 @@
     top: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-section.main{
+body{
+    scroll-behavior: smooth;
+}
+/* INDEX SECTION START */
+.section-page {
+    height: 100vh;
+    display: flex;
+    color: white;
+  }
+
+  /* Style for Section 1 */
+  .section-page:nth-child(1) {
+    background-image: url('img/pubg1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+h1.tournament-h1,.announcements-h1{
+    position: relative;
+    top: 30%;
+}
+p.tournament-p,.announcements-p{
+    position: relative;
+    top: 35%;
+    width: 50vw;
+    height: 26%;
+}
+div.tournament-display,.announcements-display{
+    position: relative;
+    width: 45vw;
+    height: 70%;
+    left: 100%;
+}
+  /* Style for Section 2 */
+  .section-page:nth-child(2) {
+    background-image: url('img/pubg2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Style for Section 3 */
+  .section-page:nth-child(3) {
+    background-image: url('img/pubg3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    padding: 20px;
+  }
+/* INDEX SECTION END */
+/* LOGIN & SIGNUP SECTION START */
+section.main-login{
     position: absolute;
     height: 100%;
     width: 100%;
     overflow-y: hidden;
     background-image: url(img/pubg2.jpg);
 }
-section.main-2{
+section.main-signup{
     position: absolute;
     height: 100%;
     width: 100%;
     overflow-y: hidden;
     background-image: url(img/pubg2.jpg);
 }
-section.left{
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    left: 0;
-}
-div.left-items{
+section.main-feed{
     position: absolute;
     height: 100%;
     width: 100%;
+    overflow-y: hidden;
+    background-image: url(img/pubg5.jpg);
 }
+section.main-market{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    background-image: url(img/pubg6.jpg);
+}
+/* LOGIN & SIGNUP SECTION END */
+/* CONTACT SECTION START*/
+section.main-contus{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    background-image: url(img/pubg2.jpg);
+}
+.container{
+    position: absolute;
+    top: 20%;
+    height: 100%;
+}
+.cont-h1{
+    position: absolute;
+    color: #000;
+    top: 5%;
+    left: 600px;
+}
+.cont-name{
+    position: absolute;
+    top: 90px;
+    left: 600px;
+    width: 190px;
+    height: 30px;
+}
+.cont-email{
+    position: absolute;
+    top: 140px;
+    left: 600px;
+    width: 190px;
+    height: 30px;
+}
+textarea{
+    position: absolute;
+    top: 190px;
+    left: 600px;
+    width: 190px;
+}
+.cont-btn{
+    position: absolute;
+    top: 320px;
+    left: 600px;
+    width: 190px;
+    height: 40px;
+    color: #fff;
+}
+/* CONTACT SECTION END */
 h1,h2{
     color: white;
 }
-/* h1.left-h1{
-    position: relative;
-    top: 20%;
-    left: 40%;
-}
-h2.left-h2{
-    position: relative;
-    top: 60%;
-    left: 40%;
-} */
 section.center{
     position: absolute;
     height: 100%;
@@ -52,6 +145,7 @@ div.right-items{
     height: 100%;
     top: 40px;
 }
+/* BUTTON INPUT CHECKBOX START */
 .sign-up-btn{
     position: absolute;
     top: 10px;
@@ -183,11 +277,13 @@ p.remember{
 .remember-1:hover{
     cursor: pointer;
 }
+/* BUTTON INPUT CHECKBOX END */
+/* FOOTER START */
 .footer{
-    position: absolute;
+    position: fixed;
     top: 93%;
     width: 100%;
-    height: 43px;
+    height: 55px;
     background-color: rgb(26, 23, 23);
 }
 .btn-primary{
@@ -206,13 +302,18 @@ p.remember{
     top: 25%;
     color: #fff;
 }
+/* FOOTER END */
 /* NAVBAR START */
+nav{
+    position: absolute;
+    width: 97%;
+}
   .navbar {
     background-color: rgb(26, 23, 23);
     color: white;
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 20px;
   }
   
   .nav-list {
