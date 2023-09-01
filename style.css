@@ -9,6 +9,7 @@ body{
 /* INDEX SECTION START */
 .section-page {
     height: 100vh;
+    width: 100vw;
     display: flex;
     color: white;
   }
@@ -306,64 +307,418 @@ p.remember{
 }
 /* FOOTER END */
 /* NAVBAR START */
-nav{
-    position: absolute;
-    width: 97%;
-}
-  .navbar {
-    background-color: rgb(26, 23, 23);
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
+  *:not(i) {
+    font-family: "Poppins", sans-serif;
   }
-  
-  .nav-list {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10px;
+    background-color: rgb(26, 23, 23);
+    padding: 1.5rem 0rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 1rem;
   }
-  
-  .nav-list li {
-    margin-left: 35px;
-  }
-  
-  .nav-list li:first-child {
-    margin-left: 0;
-  }
-  
-  .nav-list li a {
+  nav a {
+    font-size: 1.2rem;
     text-decoration: none;
-    color: white;
-    transition: color 0.3s;
   }
-  
-  .nav-list li a:hover {
-    color: gray;
-  }  
+  nav a#logo {
+    color: #fff;
+    font-weight: 700;
+  }
+  nav ul a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  nav ul a:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+  #ham-menu {
+    display: none;
+  }
+  nav ul.active {
+    left: 0;
+  }
 /* NAVBAR END */
 /* MEDIA QUERY START */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     /* Styles for desktops and laptops */
   }
   
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     /* Styles for tablets */
-  }
-  
-  @media screen and (max-width: 768px) {
-    /* Styles for smartphones */
-    
-  }
-  @media screen and (max-width: 425px) {
-    /* Styles for smartphones */
-    /* NAVBAR START */
-
+        /* NAVBAR START */
+        html {
+            font-size: 56.25%;
+          }
+          header {
+            padding: 2.2rem -5.2rem;
+          }
     /* NAVBAR END */
   }
-  @media screen and (max-width: 375px) {
+  
+  @media screen and (max-width: 767px) {
     /* Styles for smartphones */
+        /* NAVBAR START */
+        html {
+            font-size: 50%;
+          }
+          #ham-menu {
+            display: block;
+            color: #ffffff;
+          }
+          nav a#logo,
+          #ham-menu {
+            font-size: 3.2rem;
+          }
+          nav ul a {
+            color: #ffffff;
+            font-size: medium;
+          }
+          nav{
+            position: relative;
+            height: 5px;
+          }
+          nav ul {
+            background-color: black;
+            position: fixed;
+            left: -100vw;
+            top: 35px;
+            width: 94.8vw;
+            height: calc(98.9vh - 73.6px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            transition: 1s;
+            gap: 0;
+            z-index: 999 !important;
+          }
+          
+    /* NAVBAR END */
+    /* CONTACT SECTION START*/
+section.main-contus{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  background-image: url(img/pubg2.jpg);
+  background-position: center;
+}
+.container{
+  position: absolute;
+  top: 20%;
+  height: 100%;
+}
+h1.cont-h1{
+  position: absolute;
+  color: #fff;
+  top: 5%;
+  height: 30px;
+  width: 100%;
+  left: 369.5px;
+}
+.cont-name{
+  position: absolute;
+  top: 90px;
+  left: 250.5px;
+  width: 300px;
+  height: 30px;
+}
+.cont-email{
+  position: absolute;
+  top: 140px;
+  left: 250.5px;
+  width: 300px;
+  height: 30px;
+}
+textarea{
+  position: absolute;
+  top: 190px;
+  left: 250.5px;
+  width: 300px;
+}
+.cont-btn{
+  position: absolute;
+  top: 320px;
+  left: 250.5px;
+  width: 300px;
+  height: 40px;
+  color: #fff;
+}
+/* CONTACT SECTION END */
+/* BUTTON INPUT CHECKBOX START */
+.sign-up-btn{
+  position: absolute;
+  top: 10px;
+  left: 250.5px;
+  width: 190px;
+  height: 60px;
+  color: #fff;
+}
+.fb-log-in-btn{
+  position: absolute;
+  top: 90px;
+  left: 240px;
+  width: 190px;
+  height: 60px;
+  color: #fff;
+}
+.phone-log-in-btn{
+  position: absolute;
+  top: 170px;
+  left: 240px;
+  width: 190px;
+  height: 60px;
+  color: #fff;
+}
+input{
+  position: absolute;
+  left: 250.5px;
+  background: black;
+  border: 3px solid #181616;
+  border-radius: 0px;
+}
+input.first-name{
+  position: absolute;
+  top: 90px;
+  left: 110.5px;
+  width: 190px;
+  height: 30px;
+}
+input.last-name{
+  position: absolute;
+  top: 140px;
+  left: 110.5px;
+  width: 190px;
+  height: 30px;
+}
+input.id-no{
+  position: absolute;
+  top: 190px;
+  left: 110.5px;
+  width: 190px;
+  height: 30px;
+}
+input.passwd{
+  position: absolute;
+  top: 290px;
+  left: 110.5px;
+  width: 190px;
+  height: 30px;
+}
+input.email{
+  position: absolute;
+  top: 240px;
+  left: 110.5px;
+  width: 190px;
+  height: 30px;
+}
+.login-btn{
+  position: absolute;
+  top: 420px;
+  left: 110.5px;
+  width: 190px;
+  height: 60px;
+  color: #fff;
+}
+.signup-btn{
+  position: absolute;
+  top: 390px;
+  left: 110.5px;
+  width: 190px;
+  height: 60px;
+  color: #fff;
+}
+p.remember{
+  position: absolute;
+  top: 340px;
+  left: 140.5px;
+  font-size: medium;
+  width: 190px;
+  color: #181616;
+}
+.login-here{
+  position: absolute;
+  top: 350px;
+  font-size: medium;
+  left: 110.5px;
+  width: 190px;
+  color: #000;
+}
+.signup-here{
+  position: absolute;
+  top: 375px;
+  left: 110.5px;
+  font-size: medium;
+  width: 190px;
+  color: #000;
+}
+.remember-1{
+  position: absolute;
+  top: 342px;
+  font-size: medium;
+  left: 110.5px;
+}
+.remember-1:hover{
+  cursor: pointer;
+}
+/* BUTTON INPUT CHECKBOX END */
+/* LOGIN & SIGNUP SECTION START */
+section.main-login{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  background-image: url(img/pubg2.jpg);
+  background-position: center;
+}
+section.main-signup{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  background-image: url(img/pubg2.jpg);
+  background-position: center;
+}
+section.main-feed{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  background-image: url(img/pubg5.jpg);
+  background-position: center;
+}
+section.main-market{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  background-image: url(img/pubg6.jpg);
+  background-position: center;
+}
+/* LOGIN & SIGNUP SECTION END */
+/* ANNOUNCEMENT AND ALL TOURNAMENTS START */
+h1.tournament-h1,.announcements-h1{
+  position: relative;
+  top: 30%;
+  font-size: medium;
+}
+p.tournament-p,.announcements-p{
+  position: relative;
+  top: 35%;
+  width: 50vw;
+  height: 26%;
+  font-size: medium;
+}
+/* ANNOUNCEMENT AND ALL TOURNAMENTS END */
+    /* FOOTER START */
+    .footer{
+      position: fixed;
+      top: 93%;
+      width: 100%;
+      height: 55px;
+      background-color: rgb(26, 23, 23);
+  }
+  .text-center1{
+      position:absolute;
+      left:75%;
+      top: 0px;
+  }
+  .text-center2{
+      position: absolute;
+      left: -120%;
+      top: 25%;
+      color: #fff;
+      font-size: medium;
+  }
+    /* FOOTER END */
+  }
+  @media screen and (max-width: 575px) {
+    /* Styles for smartphones */
+    /* BODY START */
+
+    /* BODY END */
+    /* NAVBAR START */
+    html {
+        font-size: 46.87%;
+      }
+      header {
+        padding: 2rem 3rem;
+      }
+      nav ul {
+        top: 65.18px;
+        height: calc(100vh - 65.18px);
+      }
+    /* NAVBAR END */
+    /* SECTION START */
+    .section-page {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        color: white;
+      }
+      h1.tournament-h1,.announcements-h1{
+        position: relative;
+        top: 5%;
+    }
+    p.tournament-p,.announcements-p{
+        position: relative;
+        top: 15%;
+        width: 30vw;
+        height: 26%;
+    }
+    div.tournament-display,.announcements-display{
+        position: relative;
+        width: 30vw;
+        bottom: 15%;
+        height: 70%;
+        left: 60%;
+        background-color: #000;
+    }
+    /* SECTION END */
+    /* FOOTER START */
+    .footer{
+        position: fixed;
+        top: 93%;
+        width: 95%;
+        height: 65px;
+        background-color: rgb(26, 23, 23);
+    }
+    .btn-primary{
+        border: 3px solid #fff;
+        border-radius: 35px;
+        background-color: #fff;
+    }
+    .text-center1{
+        position:absolute;
+        left:55%;
+        top: 0px;
+    }
+    .text-center2{
+        position: absolute;
+        left: -225%;
+        top: 25%;
+        color: #fff;
+    }
+    /* FOOTER END */
+    /* FOOTER END */
+  }
+  @media screen and (min-width: 375px) {
+    /* Styles for smartphones */
+        /* NAVBAR START */
+
+    /* NAVBAR END */
   }
   
 /* MEDIA QUERY END */

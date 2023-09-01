@@ -6,6 +6,12 @@
   <!-- CSS LINK START -->
   <link rel="stylesheet" href="style.css">
   <!-- CSS LINK END -->
+     <!-- Font Awesome Icons Start -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+   />
+     <!-- Font Awesome Icons End -->
   <!-- Font Awesome Start-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
   <!-- Font Awesome End -->
@@ -16,16 +22,32 @@
   <!-- HOME SECTION START -->
   <section class="section-page">
       <!-- NAVBAR START -->
-  <nav class="navbar">
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="marketplace.html">Market place</a></li>
-      <li><a href="feed.html">Feed</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="signup.html">Sign-Up</a></li>
-    </ul>
-  </nav>  
+  <header>
+    <nav>
+      <a href="index.html" id="logo">Site Logo</a>
+      <i class="fas fa-bars" id="ham-menu"></i>
+      <ul id="nav-bar">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="marketplace.html">Market place</a>
+        </li>
+        <li>
+          <a href="feed.html">Feed</a>
+        </li>
+        <li>
+          <a href="contactus.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="signup.html">Sign-Up</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <!-- NAVBAR END -->
 </section>
 
@@ -36,10 +58,7 @@
     <h1 class="tournament-h1">ALL TOURNAMENTS</h1>
     <p class="tournament-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem
        suscipit facere rem impedit eum, quod est, eius fugiat dolor error reprehenderit optio quam natus? Facilis voluptas enim eveniet maiores aspernatur
-        at quasi ea ducimus qui corporis, consequatur autem. Autem iusto corporis nostrum vitae voluptatum vero nemo nam facilis quos rerum cupiditate 
-        explicabo hic veniam asperiores sunt, atque in dolorum perspiciatis enim consectetur inventore! Est sequi quod fugit deserunt dicta impedit eaque 
-        laudantium fuga accusamus quasi doloremque, tempora recusandae obcaecati modi non voluptas quidem rerum qui ex temporibus 
-      provident incidunt consequatur quae quas? Ullam, magni alias architecto unde praesentium voluptatum.</p>
+        at quasi ea ducimus qui corporis, consequatur autem.</p>
       <div class="tournament-display"></div>
   </div>
 </div>
@@ -50,10 +69,7 @@
     <h1 class="announcements-h1">ANNOUNCEMENTS</h1>
     <p class="announcements-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem
       suscipit facere rem impedit eum, quod est, eius fugiat dolor error reprehenderit optio quam natus? Facilis voluptas enim eveniet maiores aspernatur
-       at quasi ea ducimus qui corporis, consequatur autem. Autem iusto corporis nostrum vitae voluptatum vero nemo nam facilis quos rerum cupiditate 
-       explicabo hic veniam asperiores sunt, atque in dolorum perspiciatis enim consectetur inventore! Est sequi quod fugit deserunt dicta impedit eaque 
-       laudantium fuga accusamus quasi doloremque, tempora recusandae obcaecati modi non voluptas quidem rerum qui ex temporibus 
-     provident incidunt consequatur quae quas? Ullam, magni alias architecto unde praesentium voluptatum.</p>
+       at quasi ea ducimus qui corporis, consequatur autem.</p>
      <div class="announcements-display"></div>
   </div>
 </div>
@@ -85,6 +101,21 @@
 
 </body>
 <!-- JAVASCRIPT LINK START -->
-<script src="app.js"></script>
+<script>
+  let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
+
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
+});
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
+});
+</script>
 <!-- JAVASCRIPT LINK END -->
 </html>
