@@ -2,6 +2,7 @@
     margin: 0;
     top: 0;
     font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
 }
 body{
     scroll-behavior: smooth;
@@ -283,9 +284,9 @@ p.remember{
 /* FOOTER START */
 .footer{
     position: fixed;
-    top: 93%;
+    top: 91%;
     width: 100%;
-    height: 55px;
+    height: 75px;
     background-color: rgb(26, 23, 23);
 }
 .btn-primary{
@@ -295,13 +296,13 @@ p.remember{
 }
 .text-center1{
     position:absolute;
-    left:75%;
-    top: 0px;
+    left:70%;
+    top: 58%;
 }
 .text-center2{
     position: absolute;
     left: -225%;
-    top: 25%;
+    top: -50%;
     color: #fff;
 }
 /* FOOTER END */
@@ -877,84 +878,98 @@ input{
 }
 input.first-name{
   position: absolute;
-  top: 90px;
-  left: 40.5px;
+  top: 240px;
+  left: 5.5px;
   width: 190px;
   height: 30px;
 }
 input.last-name{
   position: absolute;
-  top: 140px;
-  left: 40.5px;
+  top: 300px;
+  left: 5.5px;
   width: 190px;
   height: 30px;
 }
 input.id-no{
   position: absolute;
-  top: 190px;
-  left: 40.5px;
+  top: 360px;
+  left: 5.5px;
   width: 190px;
   height: 30px;
 }
 input.passwd{
   position: absolute;
-  top: 290px;
-  left: 40.5px;
+  top: 480px;
+  left: 5.5px;
   width: 190px;
   height: 30px;
 }
 input.email{
   position: absolute;
-  top: 240px;
-  left: 40.5px;
+  top: 400px;
+  left: 5.5px;
+  width: 190px;
+  height: 30px;
+}
+input.email-log{
+  position: absolute;
+  top: 250px;
+  left: 5.5px;
+  width: 190px;
+  height: 30px;
+}
+input.passwd-log{
+  position: absolute;
+  top: 320px;
+  left: 5.5px;
   width: 190px;
   height: 30px;
 }
 .login-btn{
   position: absolute;
-  top: 420px;
-  left: 40.5px;
+  top: 500px;
+  left: 5.5px;
   width: 190px;
   height: 60px;
   color: #fff;
 }
 .signup-btn{
   position: absolute;
-  top: 390px;
-  left: 40.5px;
+  top: 600px;
+  left: 5.5px;
   width: 190px;
   height: 60px;
   color: #fff;
 }
 p.remember{
   position: absolute;
-  top: 340px;
-  left: 70.5px;
+  top: 380px;
+  left: 30.5px;
   font-size: medium;
   width: 190px;
   color: #181616;
 }
 .login-here{
   position: absolute;
-  top: 350px;
+  top: 540px;
   font-size: medium;
-  left: 40.5px;
+  left: 5.5px;
   width: 190px;
   color: #000;
 }
 .signup-here{
   position: absolute;
-  top: 375px;
-  left: 40.5px;
+  top: 430px;
+  left: 5.5px;
   font-size: medium;
   width: 190px;
   color: #000;
 }
 .remember-1{
   position: absolute;
-  top: 342px;
+  top: 380px;
   font-size: medium;
-  left: 40.5px;
+  left: 5.5px;
 }
 .remember-1:hover{
   cursor: pointer;
@@ -1021,33 +1036,33 @@ section.main-market{
       width: 100%;
       font-weight: 600;
       font-size: medium;
-      left: 240.5px;
+      left: 140.5px;
     }
     .cont-name{
       position: absolute;
       top: 90px;
-      left: 120.5px;
-      width: 300px;
+      left: 100.5px;
+      width: 220px;
       height: 30px;
     }
     .cont-email{
       position: absolute;
       top: 140px;
-      left: 120.5px;
-      width: 300px;
+      left: 100.5px;
+      width: 220px;
       height: 30px;
     }
     textarea{
       position: absolute;
       top: 190px;
-      left: 120.5px;
-      width: 300px;
+      left: 100.5px;
+      width: 220px;
     }
     .cont-btn{
       position: absolute;
       top: 320px;
-      left: 120.5px;
-      width: 300px;
+      left: 100.5px;
+      width: 220px;
       height: 40px;
       color: #fff;
     }
@@ -1055,9 +1070,9 @@ section.main-market{
     /* FOOTER START */
     .footer{
         position: fixed;
-        top: 93%;
+        top: 92%;
         width: 100%;
-        height: 65px;
+        height: 50%;
         background-color: rgb(26, 23, 23);
     }
     .btn-primary{
@@ -1067,21 +1082,20 @@ section.main-market{
     }
     .text-center1{
         position:absolute;
-        left:65%;
-        top: 0px;
+        left:30%;
+        top: 2%;
     }
     .text-center2{
         position: absolute;
-        left: -65%;
-        top: 25%;
+        left: 33%;
+        top: 100%;
         color: #fff;
     }
     /* FOOTER END */
   }
   @media screen and (max-width: 375px) {
     /* Styles for smartphones */
-    /* NAVBAR START */
-  /* NAVBAR END */
+
   /* SECTION START */
   .section-page {
       height: 100vh;
@@ -1108,12 +1122,235 @@ section.main-market{
       background-color: #000;
   }
   /* SECTION END */
+      /* CONTACT SECTION START */
+  .sign-up-btn{
+    position: absolute;
+    top: 10px;
+    left: 250.5px;
+    width: 190px;
+    height: 60px;
+    color: #fff;
+  }
+  .fb-log-in-btn{
+    position: absolute;
+    top: 90px;
+    left: 240px;
+    width: 190px;
+    height: 60px;
+    color: #fff;
+  }
+  .phone-log-in-btn{
+    position: absolute;
+    top: 170px;
+    left: 240px;
+    width: 190px;
+    height: 60px;
+    color: #fff;
+  }
+  input{
+    position: absolute;
+    left: 40.5px;
+    background: black;
+    border: 3px solid #181616;
+    border-radius: 0px;
+  }
+  input.first-name{
+    position: absolute;
+    top: 240px;
+    left: 5.5px;
+    width: 190px;
+    height: 30px;
+  }
+  input.last-name{
+    position: absolute;
+    top: 300px;
+    left: 5.5px;
+    width: 190px;
+    height: 30px;
+  }
+  input.id-no{
+    position: absolute;
+    top: 360px;
+    left: 5.5px;
+    width: 190px;
+    height: 30px;
+  }
+  input.passwd{
+    position: absolute;
+    top: 480px;
+    left: 5.5px;
+    width: 190px;
+    height: 30px;
+  }
+  input.email{
+    position: absolute;
+    top: 400px;
+    left: 5.5px;
+    width: 190px;
+    height: 30px;
+  }
+  input.email-log{
+    position: absolute;
+    top: 250px;
+    left: 5.5px;
+    width: 190px;
+    height: 30px;
+  }
+  input.passwd-log{
+    position: absolute;
+    top: 320px;
+    left: 5.5px;
+    width: 190px;
+    height: 30px;
+  }
+  .login-btn{
+    position: absolute;
+    top: 500px;
+    left: 5.5px;
+    width: 190px;
+    height: 60px;
+    color: #fff;
+  }
+  .signup-btn{
+    position: absolute;
+    top: 600px;
+    left: 5.5px;
+    width: 190px;
+    height: 60px;
+    color: #fff;
+  }
+  p.remember{
+    position: absolute;
+    top: 380px;
+    left: 30.5px;
+    font-size: medium;
+    width: 190px;
+    color: #181616;
+  }
+  .login-here{
+    position: absolute;
+    top: 540px;
+    font-size: medium;
+    left: 5.5px;
+    width: 190px;
+    color: #000;
+  }
+  .signup-here{
+    position: absolute;
+    top: 430px;
+    left: 5.5px;
+    font-size: medium;
+    width: 190px;
+    color: #000;
+  }
+  .remember-1{
+    position: absolute;
+    top: 380px;
+    font-size: medium;
+    left: 5.5px;
+  }
+  .remember-1:hover{
+    cursor: pointer;
+  }
+  /* BUTTON INPUT CHECKBOX END */
+  /* LOGIN & SIGNUP SECTION START */
+  .section-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: white;
+  }
+  section.main-login{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    background-image: url(img/pubg2.jpg);
+    background-position: center;
+  }
+  section.main-signup{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    background-image: url(img/pubg2.jpg);
+    background-position: center;
+  }
+  section.main-feed{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    background-image: url(img/pubg5.jpg);
+    background-position: center;
+  }
+  section.main-market{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    background-image: url(img/pubg6.jpg);
+    background-position: center;
+  }
+  /* LOGIN & SIGNUP SECTION END */
+      /* CONTACT SECTION START*/
+      section.main-contus{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-image: url(img/pubg2.jpg);
+        background-position: center;
+      }
+      .container{
+        position: absolute;
+        top: 20%;
+        height: 100%;
+      }
+      h1.cont-h1{
+        position: absolute;
+        color: #fff;
+        top: 5%;
+        height: 30px;
+        width: 100%;
+        font-weight: 600;
+        font-size: medium;
+        left: 140.5px;
+      }
+      .cont-name{
+        position: absolute;
+        top: 90px;
+        left: 100.5px;
+        width: 220px;
+        height: 30px;
+      }
+      .cont-email{
+        position: absolute;
+        top: 140px;
+        left: 100.5px;
+        width: 220px;
+        height: 30px;
+      }
+      textarea{
+        position: absolute;
+        top: 190px;
+        left: 100.5px;
+        width: 220px;
+      }
+      .cont-btn{
+        position: absolute;
+        top: 320px;
+        left: 100.5px;
+        width: 220px;
+        height: 40px;
+        color: #fff;
+      }
+      /* CONTACT SECTION END */
         /* FOOTER START */
         .footer{
           position: fixed;
-          top: 83%;
-          width: 100vw;
-          height: 65px;
+          top: 92%;
+          width: 100%;
+          height: 50%;
           background-color: rgb(26, 23, 23);
       }
       .btn-primary{
@@ -1123,13 +1360,13 @@ section.main-market{
       }
       .text-center1{
           position:absolute;
-          left:25%;
-          top: 35%;
+          left:30%;
+          top: 2%;
       }
       .text-center2{
           position: absolute;
-          left: 45%;
-          top: -40%;
+          left: 33%;
+          top: 100%;
           color: #fff;
       }
       /* FOOTER END */
