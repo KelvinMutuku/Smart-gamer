@@ -7,6 +7,9 @@
 body{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+  z-index: 999;
+}
 /* INDEX SECTION START */
 .section-page {
     height: 100vh;
@@ -75,6 +78,8 @@ section.main-feed{
     width: 100%;
     overflow-y: hidden;
     background-image: url(img/pubg5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 section.main-market{
     position: absolute;
@@ -82,6 +87,8 @@ section.main-market{
     width: 100%;
     overflow-y: hidden;
     background-image: url(img/pubg6.jpg);
+        background-size: cover;
+    background-repeat: no-repeat;
 }
 /* LOGIN & SIGNUP SECTION END */
 /* CONTACT SECTION START*/
@@ -103,32 +110,33 @@ h1.cont-h1{
     top: 5%;
     height: 30px;
     width: 100%;
-    left: 530px;
+    left: 680px;
+    font-size: large;
 }
 .cont-name{
     position: absolute;
     top: 90px;
-    left: 530px;
+    left: 680px;
     width: 300px;
     height: 30px;
 }
 .cont-email{
     position: absolute;
     top: 140px;
-    left: 530px;
+    left: 680px;
     width: 300px;
     height: 30px;
 }
 textarea{
     position: absolute;
     top: 190px;
-    left: 530px;
+    left: 680px;
     width: 300px;
 }
 .cont-btn{
     position: absolute;
     top: 320px;
-    left: 530px;
+    left: 680px;
     width: 300px;
     height: 40px;
     color: #fff;
@@ -203,79 +211,94 @@ input[type="email"]{
 }
 input.first-name{
     position: absolute;
-    top: 90px;
-    left: 240px;
-    width: 190px;
+    top: 180px;
+    left: 290px;
+    width: 210px;
     height: 30px;
 }
 input.last-name{
     position: absolute;
-    top: 140px;
-    left: 240px;
-    width: 190px;
+    top: 240px;
+    left: 290px;
+    width: 210px;
     height: 30px;
 }
 input.id-no{
     position: absolute;
-    top: 190px;
-    left: 240px;
-    width: 190px;
+    top: 300px;
+    left:290px;
+    width: 210px;
     height: 30px;
 }
 input.passwd{
     position: absolute;
-    top: 290px;
-    left: 240px;
-    width: 190px;
+    top: 420px;
+    left: 290px;
+    width: 210px;
     height: 30px;
 }
 input.email{
     position: absolute;
-    top: 240px;
-    left: 240px;
-    width: 190px;
+    top: 360px;
+    left: 290px;
+    width: 210px;
     height: 30px;
+}
+input.passwd-log{
+  position: absolute;
+  top: 280px;
+  left: 290px;
+  width: 210px;
+  height: 30px;
+}
+input.email-log{
+  position: absolute;
+  top: 220px;
+  left: 290px;
+  width: 210px;
+  height: 30px;
 }
 .login-btn{
     position: absolute;
-    top: 420px;
-    left: 240px;
-    width: 190px;
+    top: 460px;
+    left: 290px;
+    width: 210px;
     height: 60px;
     color: #fff;
 }
 .signup-btn{
     position: absolute;
-    top: 390px;
-    left: 240px;
-    width: 190px;
+    top: 540px;
+    left: 290px;
+    width: 210px;
     height: 60px;
     color: #fff;
 }
 p.remember{
     position: absolute;
     top: 340px;
-    left: 270px;
-    width: 190px;
+    left: 320px;
+    width: 290px;
     color: #181616;
 }
 .login-here{
     position: absolute;
-    top: 350px;
-    left: 240px;
-    width: 190px;
+    top: 480px;
+    left: 290px;
+    width: 210px;
     color: #000;
 }
 .signup-here{
     position: absolute;
-    top: 375px;
-    left: 240px;
-    width: 190px;
+    top: 400px;
+    left: 290px;
+    width: 210px;
     color: #000;
 }
 .remember-1{
     position: absolute;
     top: 342px;
+    left: 290px;
 }
 .remember-1:hover{
     cursor: pointer;
@@ -295,14 +318,14 @@ p.remember{
     background-color: #fff;
 }
 .text-center1{
-    position:absolute;
-    left:70%;
-    top: 58%;
+    position:relative;
+    left:45%;
+    top: 2%;
 }
 .text-center2{
-    position: absolute;
-    left: -225%;
-    top: -50%;
+    position: relative;
+    left: 3%;
+    top: 12%;
     color: #fff;
 }
 /* FOOTER END */
@@ -1070,7 +1093,7 @@ section.main-market{
     /* FOOTER START */
     .footer{
         position: fixed;
-        top: 92%;
+        top: 91%;
         width: 100%;
         height: 50%;
         background-color: rgb(26, 23, 23);
