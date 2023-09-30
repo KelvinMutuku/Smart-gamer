@@ -142,6 +142,155 @@ textarea{
     color: #fff;
 }
 /* CONTACT SECTION END */
+    /* MY ACCOUNT START */
+    .part-1{
+      position: absolute;
+      width: 100vw;
+      height: 30vh;
+      background-color: #fff;
+      overflow: hidden;
+      background-image: url(img/pubg8.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .subscription{
+      position: absolute;
+      margin-top: 0%;
+      left: 24%;
+      color: #fff;
+    }
+    .acc-details{
+      position: absolute;
+      margin-top: 2.5%;
+      left: 20%;
+      width: 25%;
+      height: 70%;
+      background-color: rgba(12, 12, 14, 0.5);
+    }
+    p.ban{
+      position: relative;
+      left: 5%;
+    }
+    p.dates{
+      position: relative;
+      left: 5%;
+    }
+    p.username{
+      position: relative;
+      left: 5%;
+    }
+    p.date-joined{
+      position: relative;
+      left: 5%;
+    }
+    img.profile-pic{
+      position: relative;
+      margin-top: 1%;
+      left: 5%;
+      width: 150px;
+      height: 150px;
+      border-radius: 80px;
+    }
+    .share{
+      position: relative;
+      margin-top: 2%;
+      color: #fff;
+      left: 5%;
+    }
+    .gift{
+      position: relative;
+      margin-top: 2%;
+      left: 15%;
+      color: #fff;
+    }
+    p{
+      margin-top: 1%;
+      color: #fff;
+    }
+    .part-2{
+      position: relative;
+      margin-top: 13%;
+      width: auto;
+      height: 70vh;
+      background-color: #494848;
+      overflow: hidden;
+    }
+    .sub-nav {
+      list-style-type: none;
+      padding: 1%;
+      margin: 0;
+    }
+    .sub-nav li {
+      display: inline-block;
+      margin-left: 10%;
+    }
+    .sub-nav li:hover{
+      text-decoration: none;
+      color: black;
+      text-decoration-line: underline;
+    }
+    .sub-nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: larger;
+    }
+    .acc-h{
+      position: relative;
+      margin-top: 2%;
+      left: 2%;
+      font-size: large;
+    }
+    .game-img{
+      position: relative;
+      margin-top: 2%;
+      width: 25%;
+      height: 49%;
+      left: 5%;
+      background-color:#fff ;
+    }
+    .acc-dtls{
+      position: absolute;
+      margin-top: 8.8%;
+      left: 30%;
+      height: 49%;
+      width: 70%;
+      background-color: #000;
+    }
+    .row-1acc{
+      position: relative;
+      width: 100%;
+      height: 30%;
+    }
+    .row-1p{
+      display: inline-block;
+      margin-left: 25%;
+      margin-top: 2%;
+      font-size: larger;
+    }
+    .row-2acc{
+      position: relative;
+      width: 100%;
+      height: 35%;
+    }
+    .row-2p{
+      display: inline-block;
+      margin-left: 25%;
+      margin-top: 2%;
+      font-size: larger;
+    }
+    .row-3acc{
+      position: relative;
+      width: 100%;
+      height: 0%;
+    }
+    .row-3p{
+      display: inline-block;
+      margin-left: 25%;
+      margin-top: 1%;
+      font-size: larger;
+    }
+    /* MY ACCOUNT END */
 h1,h2{
     color: white;
 }
@@ -389,6 +538,7 @@ textarea{
   color: #fff;
 }
 /* CONTACT SECTION END */
+
 /* BUTTON INPUT CHECKBOX START */
 .sign-up-btn{
   position: absolute;
