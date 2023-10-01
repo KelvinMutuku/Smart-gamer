@@ -291,6 +291,133 @@ textarea{
       font-size: larger;
     }
     /* MY ACCOUNT END */
+    /* TOURNAMENT START */
+    .side-nav{
+      position: absolute;
+      width: 17vw;
+      height: 100vh;
+      background-color: #000;
+    }
+    .s-nav li{
+      margin-top: 15%;
+    }
+    .s-nav a{
+      text-decoration: none;
+      color: #fff;
+      font-size: larger;
+    }
+    .top-nav{
+      position: absolute;
+      width: 83vw;
+      height: 10vh;
+      background-color: #494848;
+      left: 0%;
+      top: 0%;
+    }
+    .top-navlogo{
+      position: absolute;
+      top: 2%;
+      left: 5%;
+    }
+    .t-nav {
+      position: absolute;
+      list-style-type: none;
+      padding: 0.5%;
+    }
+    .t-nav button{
+      position: relative;
+      display: inline-block;
+      right: -900px;
+    }
+    .t-nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: larger;
+    }
+    .esports{
+      position: absolute;
+      left: 2%;
+      top: 13%;
+      color: #fff;
+      font-size: larger;
+    }
+      .live{
+      position: absolute;
+      left: 2%;
+      top: 27%;
+      color: #fff;
+      font-size: larger;
+    }
+    .drop-down{
+      position: absolute;
+      width: 80vw;
+      height: 8vh;
+      left: 2%;
+      top: 18%;
+    }
+    .rounded-dropdown {
+      padding: 10px;
+      border-radius: 9px;
+      background-color: #fff;
+      color: #000;
+      font-size: 16px;
+      color: #fff;
+      background-color: #494848;
+    }    
+    .pubg{
+      color: #fff;
+      border-radius: 9px;
+      background-color: #494848;
+    }
+    .live-match{
+      position: absolute;
+      width: 80vw;
+      height: 55vh;
+      left: 2%;
+      top: 33%;
+    }
+    .match{
+      position: relative;
+      height: 55vh;
+      width: 60vw;
+      background-image: url(img/pubg5.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .tournament-details{
+      position: absolute;
+      width: 20vw;
+      height: 55vh;
+      left: 75%;
+      background-color: #494848;
+    }
+    .category{
+      position: relative;
+      text-align: center;
+      top: 20%;
+      font-size: larger;
+    }
+    .name-of-participant{
+      position: relative;
+      text-align: center;
+      font-size: larger;
+      top: 25%;
+    }
+    .event{
+      position: relative;
+      left: 95px;
+      top: 35%;
+      color: #fff;
+      text-decoration: none;
+    }
+    .games-played{
+      position: relative;
+      height: 100vh;
+      width: 83vw;
+      left: 17%;
+      background-image: url(img/pubg7.jpg);
+    }
+    /* TOURNAMENT END */
 h1,h2{
     color: white;
 }
