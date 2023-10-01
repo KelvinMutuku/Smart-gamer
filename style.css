@@ -142,8 +142,7 @@ textarea{
     color: #fff;
 }
 /* CONTACT SECTION END */
-    /* MY ACCOUNT START */
-    .part-1{
+    /* MY ACCOUNT START */    .part-1{
       position: absolute;
       width: 100vw;
       height: 30vh;
@@ -197,11 +196,13 @@ textarea{
       margin-top: 2%;
       color: #fff;
       left: 5%;
+      width: 120px;
     }
     .gift{
       position: relative;
       margin-top: 2%;
       left: 15%;
+      width: 120px;
       color: #fff;
     }
     p{
@@ -223,7 +224,7 @@ textarea{
     }
     .sub-nav li {
       display: inline-block;
-      margin-left: 10%;
+      margin-left: 8%;
     }
     .sub-nav li:hover{
       text-decoration: none;
@@ -264,7 +265,7 @@ textarea{
     }
     .row-1p{
       display: inline-block;
-      margin-left: 25%;
+      margin-left: 20%;
       margin-top: 2%;
       font-size: larger;
     }
@@ -275,8 +276,8 @@ textarea{
     }
     .row-2p{
       display: inline-block;
-      margin-left: 25%;
-      margin-top: 2%;
+      margin-left: 20%;
+      margin-top: 0%;
       font-size: larger;
     }
     .row-3acc{
@@ -286,7 +287,7 @@ textarea{
     }
     .row-3p{
       display: inline-block;
-      margin-left: 25%;
+      margin-left: 20%;
       margin-top: 1%;
       font-size: larger;
     }
