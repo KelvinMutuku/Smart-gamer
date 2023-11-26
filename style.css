@@ -292,7 +292,7 @@ textarea{
       font-size: larger;
     }
     /* MY ACCOUNT END */
-    /* TOURNAMENT START */
+    /* LIVE-TOURNAMENT START */
     .side-nav{
       position: absolute;
       width: 17vw;
@@ -417,6 +417,254 @@ textarea{
       width: 83vw;
       left: 17%;
       background-image: url(img/pubg7.jpg);
+    }
+    /* LIVE-TOURNAMENT END */
+       /* TOURNAMENT START */
+    .tournament-1{
+      position: relative;
+      height: 100vh;
+      width: 98.75vw;
+      background-image: linear-gradient(to left, #010135 80%, #910a0a 100%);
+      overflow: hidden;
+    }
+    .tournament-2{
+      position: relative;
+      height: 100vh;
+      width: 98.75vw;
+      background-image: linear-gradient(to left, #010135 80%, #910a0a 100%);
+      overflow: hidden;
+    }
+    .tournament-3{
+      position: relative;
+      height: 100vh;
+      width: 98.75vw;
+      background-image: linear-gradient(to left, #010135 80%, #910a0a 100%);
+      overflow: hidden;
+    }
+    .container-tournament{
+      position: inherit;
+      height: 100vh;
+      width: 98.75vw;
+    }
+    .headings{
+      position: inherit;
+      width: inherit;
+      height: 30vh;
+      top: 10%;
+      left: 40%;
+    }
+    .team-player{
+      position: inherit;
+      left: 0.9%;
+      padding-bottom: 1.2%;
+      color: #dd5353;
+    }
+    .vs{
+      background-color: #dd5353;
+      padding: 1% 1%;
+      padding-bottom: 0.5%;
+      border-radius: 50%;
+    }
+    .up-match{
+      position: inherit;
+      width: 90vw;
+      height: 20%;
+      left: 5%;
+      top: -7%;
+      background-color: #fff;
+    }
+    .row-1-tournament{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.5rem 0.5rem;
+      background-color: #dd5353;
+    }
+    .title-matches{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .upcom-match{
+      padding-left: 20%;
+      color: #fff;
+    }
+    .prev-match{
+      padding-right: 20%;
+      color: #fff;
+    }
+    .upcoming-match-1{
+      padding-top: 2%;
+      width: 40vw;
+      position: inherit;
+      left: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.5rem 0.5rem;
+      background-color: #dd5353;
+    }
+    .row-2-upcoming{
+      position: inherit;
+      width: 40.7vw;
+      height: 15vh;
+      left: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #fff;
+    }
+    .logo-1-upcoming, .logo-2-upcoming{
+        width: 8vw;
+        height: 10vh;
+    }
+    .previous-match-1{
+      top: 56%;
+      width: 40vw;
+      position: absolute;
+      left: 55%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.5rem 0.5rem;
+      background-color: #dd5353;
+    }
+    .row-2-previous{
+      position: absolute;
+      width: 40.7vw;
+      height: 15vh;
+      left: 55%;
+      top: 61%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #fff;
+    }
+    .logo-1-previous, .logo-2-previous{
+        width: 8vw;
+        height: 10vh;
+    }
+    .browse-all-games{
+      position: relative;
+      top: 5%;
+      left: 43%;
+      padding-top: 2%;
+      padding: 1.5% 1.5%;
+    }
+    .row-2-tournament{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 0.5rem;
+    }
+    .logo-1-tournament, .logo-2-tournament{
+      padding-top: 0.5%;
+    }
+    .logo-1-tournament{
+      width: 7vw;
+      height: 10vh;
+    }
+    .logo-2-tournament{
+      width: 7vw;
+      height: 10vh;
+    }
+    .watch-now{
+      height: 5vh;
+      width: 10vw;
+    }
+    .squad-players{
+      font-size: larger;
+    }
+    .headings-community{
+      position: inherit;
+      width: inherit;
+      height: 30vh;
+      top: 10%;
+      left: 2%;
+    }
+    .community-h1{
+      position: inherit;
+      left: 0%;
+      padding-bottom: 1.5%;
+      color: #dd5353;
+    }
+    .community-h2{
+      position: inherit;
+      left: 0%;
+      font-size: xx-large;
+    }
+    .community-p{
+      font-size: x-large;
+    }
+    a.join{
+      text-decoration: none;
+      color: #fff;
+    }
+    .join-community{
+      position: inherit;
+      top: 15%;
+      width: 20%;
+      height: 17%;
+      background-color: #dd5353;
+      border: none;
+    }
+    .squad-1{
+      position: absolute;
+      height: 70vh;
+      width: 25vw;
+      top: 23%;
+      left: 5%;
+    }
+    .background-img{
+      position: inherit;
+      width: 25vw;
+      height: 70vh;
+    }
+    .logo{
+      position: relative;
+      top: 60%;
+      left: 8%;
+      height: 35%;
+      width: 25%;
+      background-color: #000;
+    }
+    .player-name{
+      position: relative;
+      top: 22%;
+      left: 55%;
+    }
+    .player-team{
+      position: relative;
+      left: 45%;
+      top: 25%;
+    }
+    .event-type{
+      position: relative;
+      left: 55%;
+      top: 28%;
+    }
+    .no-of-players{
+      position: relative;
+      left: 55%;
+      top: 31%;
+    }
+    .squad-2{
+      position: absolute;
+      height: 70vh;
+      width: 25vw;
+      top: 23%;
+      left: 38%;
+      /* background-color: #000; */
+    }
+    .squad-3{
+      position: absolute;
+      height: 70vh;
+      width: 25vw;
+      top: 23%;
+      left: 70%;
+      /* background-color: #000; */
     }
     /* TOURNAMENT END */
 h1,h2{
