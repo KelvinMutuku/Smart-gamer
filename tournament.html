@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- CSS LINK START -->
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="css/buttons&inputs.css">
-  <link rel="stylesheet" href="css/responsive.css"> -->
   <!-- CSS LINK END -->
        <!-- Font Awesome Icons Start -->
        <link
@@ -17,16 +15,139 @@
   <!-- Font Awesome Start-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
   <!-- Font Awesome End -->
-    <title>Tournaments</title>
+    <title>Tournaments - Smart Gamer Esports</title>
+    <style>
+      * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  *:not(i) {
+    font-family: "Poppins", sans-serif;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    padding: 2.5rem 5rem;
+    z-index: 999;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 9%;
+    gap: 9rem;
+  }
+  nav a {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  nav a#logo {
+    color: #c0c0c0;
+    font-weight: 700;
+  }
+  nav ul a {
+    color: #ffffff;
+    font-family: 'Titillium Web';
+    font-weight: 600;
+  }
+  nav ul a:hover {
+    border-bottom: 4px solid #003399;
+  }
+  #ham-menu {
+    display: none;
+  }
+  nav ul.active {
+    left: 0;
+  }
+  @media only screen and (max-width: 991px) {
+    html {
+      font-size: 56.25%;
+    }
+    header {
+      padding: 2.2rem 5rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    html {
+      font-size: 50%;
+    }
+    #ham-menu {
+      display: block;
+      color: #ffffff;
+    }
+    nav a#logo,
+    #ham-menu {
+      font-size: 3.2rem;
+    }
+    nav ul {
+      background-color: black;
+      position: fixed;
+      left: -100vw;
+      top: 63.6px;
+      width: 100vw;
+      height: calc(100vh - 73.6px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transition: 1s;
+      gap: 0;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    html {
+      font-size: 46.87%;
+    }
+    header {
+      padding: 2rem 3rem;
+    }
+    nav ul {
+      top: 55.18px;
+      height: calc(100vh - 55.18px);
+    }
+  }
+    </style>
 </head>
-
 <body>
     <!-- TOURNAMENT-1 START -->
     <section class="tournament-1">
-          <!-- NAVBAR START -->
-
-  <!-- NAVBAR END -->
-
+      <!-- NAVBAR START -->
+      <header>
+        <nav>
+          <i class="fas fa-bars" id="ham-menu"></i>
+          <ul id="nav-bar">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="tournament.html">Tournaments</a>
+            </li>
+            <li>
+              <a href="index.html" id="logo"><img src="logo/logo-1.jpeg" class="logo-img"></a>
+            </li>
+            <li>
+              <a href="contactus.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+            <li>
+              <a href="signup.html">Sign-Up</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- NAVBAR END -->
   <div class="container-tournament">
   <!-- SCHEDULE ALL MATCHES sTART -->
     <div class="headings">
@@ -146,30 +267,27 @@ style="background-color: #fff;cursor: pointer;font-weight: bolder;">
             </div>
         </section>
         <!-- TOURNAMENT-3 END -->
-      <!-- FOOTER START -->
-      <div class="footer">
-        <footer class="text-center1">
-            <button type="button" class="btn-primary">
-              <i class="fab fa-facebook-f"></i>
-            </button>
-            <button type="button" class="btn-primary">
-              <i class="fab fa-youtube"></i>
-            </button>
-            <button type="button" class="btn-primary">
-              <i class="fab fa-instagram"></i>
-            </button>
-            <button type="button" class="btn-primary">
-              <i class="fab fa-twitter"></i>
-            </button>
-        
-          <!-- Copyright -->
-          <div class="text-center2">
-            © 2023
+          <!-- FOOTER START -->
+          <div class="footer">
+            <div class="news-letter">
+              <input type="email" name="Subscribe to our news letter" id="" placeholder="Subscribe to our news letter" class="news-let">
+            </div>
+            <footer class="text-center1">
+                <button type="button" class="btn-primary">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+                <button type="button" class="btn-primary">
+                  <i class="fab fa-youtube"></i>
+                </button>
+                <button type="button" class="btn-primary">
+                  <i class="fab fa-instagram"></i>
+                </button>
+                <button type="button" class="btn-primary">
+                  <i class="fab fa-twitter"></i>
+                </button>
+            </footer>
           </div>
-          <!-- Copyright -->
-        </footer>
-      </div>
-      <!-- FOOTER END -->
+          <!-- FOOTER END -->
     
 </body>
 </html>

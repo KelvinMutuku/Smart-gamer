@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS LINK START -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header&footer.css">
   <!-- CSS LINK END -->
        <!-- Font Awesome Icons Start -->
        <link
@@ -15,7 +16,7 @@
   <!-- Font Awesome Start-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
   <!-- Font Awesome End -->
-  <title>Contact-Us</title>
+  <title>Contact us - Smart Gamer Esports</title>
   <style>
     * {
   padding: 0;
@@ -31,8 +32,8 @@ html {
 header {
   position: fixed;
   width: 100%;
-  background-color: rgb(26, 23, 23);
-  padding: 3rem 5rem;
+  background-color: #000000;
+  padding: 2.5rem 5rem;
   z-index: 999;
 }
 nav {
@@ -43,22 +44,25 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  flex-direction: row;
+  padding-left: 9%;
+  gap: 9rem;
 }
 nav a {
   font-size: 1.8rem;
   text-decoration: none;
 }
 nav a#logo {
-  color: #ffffff;
+  color: #c0c0c0;
   font-weight: 700;
 }
 nav ul a {
   color: #ffffff;
+  font-family: 'Titillium Web';
   font-weight: 600;
 }
 nav ul a:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 4px solid #003399;
 }
 #ham-menu {
   display: none;
@@ -119,33 +123,32 @@ nav ul.active {
   <!-- SECTION START -->
   <section class="main-contus">
       <!-- NAVBAR START -->
-  <header>
-    <nav>
-      <a href="index.html" id="logo">Site Logo</a>
-      <i class="fas fa-bars" id="ham-menu"></i>
-      <ul id="nav-bar">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="marketplace.html">Market place</a>
-        </li>
-        <li>
-          <a href="feed.html">Feed</a>
-        </li>
-        <li>
-          <a href="contactus.html">Contact Us</a>
-        </li>
-        <li>
-          <a href="login.html">Login</a>
-        </li>
-        <li>
-          <a href="signup.html">Sign-Up</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- NAVBAR END -->
+      <header>
+        <nav>
+          <i class="fas fa-bars" id="ham-menu"></i>
+          <ul id="nav-bar">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="tournament.html">Tournaments</a>
+            </li>
+            <li>
+              <a href="index.html" id="logo"><img src="logo/logo-1.jpeg" class="logo-img"></a>
+            </li>
+            <li>
+              <a href="contactus.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+            <li>
+              <a href="signup.html">Sign-Up</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- NAVBAR END -->
   <!-- CONTACT SECTION START -->
   <div class="container">
     <h1 class="cont-h1">ContactUs</h1>
@@ -163,30 +166,27 @@ nav ul.active {
     </form>
   </div>
   <!-- CONTACT SECTION END -->
-  <!-- FOOTER START -->
-  <div class="footer">
-    <footer class="text-center1">
-        <button type="button" class="btn-primary">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-        <button type="button" class="btn-primary">
-          <i class="fab fa-youtube"></i>
-        </button>
-        <button type="button" class="btn-primary">
-          <i class="fab fa-instagram"></i>
-        </button>
-        <button type="button" class="btn-primary">
-          <i class="fab fa-twitter"></i>
-        </button>
-    
-      <!-- Copyright -->
-      <div class="text-center2">
-        © 2023
-      </div>
-      <!-- Copyright -->
-    </footer>
-  </div>
-  <!-- FOOTER END -->
+          <!-- FOOTER START -->
+          <div class="footer">
+            <div class="news-letter">
+              <input type="email" name="Subscribe to our news letter" id="" placeholder="Subscribe to our news letter" class="news-let">
+            </div>
+            <footer class="text-center1">
+                <button type="button" class="btn-primary">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+                <button type="button" class="btn-primary">
+                  <i class="fab fa-youtube"></i>
+                </button>
+                <button type="button" class="btn-primary">
+                  <i class="fab fa-instagram"></i>
+                </button>
+                <button type="button" class="btn-primary">
+                  <i class="fab fa-twitter"></i>
+                </button>
+            </footer>
+          </div>
+          <!-- FOOTER END -->
     </section>
   <!--SECTION END -->
 </body>
