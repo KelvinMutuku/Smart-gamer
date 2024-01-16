@@ -7,6 +7,120 @@
 body{
     scroll-behavior: smooth;
 }
+/* HOME START */
+.section-page{
+    height: 100vh;
+    width: 98.75vw;
+    background-color: #161616;
+}
+.home-h{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.home-p{
+    position: absolute;
+    top: 54%;
+    left: 35%;
+}
+.content{
+    position: relative;
+    height: 100vh;
+    width: 50vw;
+}
+.tournament-h1{
+    position: relative;
+    left: 20%;
+}
+.tournament-p{
+    position: relative;
+    left: 20%;
+    padding-top: 3%;
+}
+.signupbtn-home{
+    position: relative;
+    left: 20%;
+    top: 5%;
+    padding: 17px 45px;
+    cursor:pointer;
+    color: #fff;
+    background-color: #003399;
+    border: none;
+}
+.signupbtn-home:hover{
+    border-color: red;
+}
+.loginbtn-home{
+    position: relative;
+    left: 25%;
+    top: 5%;
+    padding: 17px 63px;
+    cursor:pointer;
+    color: #fff;
+    background-color: #161616;
+    border:2px solid #003399;
+}
+.loginbtn-home:hover{
+    color: #fff;
+    background-color: #003399;
+    border-color: red;
+}
+.content-3{
+    position: relative;
+    height: 100vh;
+    width: 98.75vw;
+}
+.announcements-h1{
+    position: relative;
+    text-align: center;
+}
+.announcements-p{
+    position: relative;
+    text-align: center;
+    top: 3%;
+}
+.announcements-h2{
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+.announcements-p1{
+    position: relative;
+    text-align: center;
+    top: 13%;
+}
+.sectionh-h1{
+    position: relative;
+    text-align: right;
+}
+.section5-h1{
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+.section6-h1{
+    position: relative;
+    text-align: center;
+    top: 20%;
+}
+.news-lethome{
+    position: relative;
+    top: 25%;
+    left: 18%;
+    width: 55%;
+    height: 53px;
+}
+.submitbtn-home{
+    position: relative;
+    padding: 17px 45px;
+    top: 25%;
+    left: 20%;
+    cursor:pointer;
+    color: #fff;
+    background-color: #003399;
+    border: none;
+}
+/* HOME END */
 /* LOGIN START */
 section.main-login{
     position: absolute;
@@ -119,12 +233,12 @@ section.reset{
     top: 47%;
     width: 160%;
 }
-.login-here{
+.login-here-res{
     position: absolute;
     top: 180%;
     left: 70%;
 }
-.login-here:hover{
+.login-here-res:hover{
     color: #003399 !important;
 }
 .sign-here{
@@ -136,6 +250,195 @@ section.reset{
     color: #003399 !important;
 }
 /* RESET END */
+/* CONTACT US START */
+.main-contus{
+    height: 100vh;
+    width: 98.75vw;
+    background-image: url(img/pubg5.jpg);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.contus-h1{
+    position: relative;
+    text-align: center;
+    top: 50%;
+}
+.sec-two-contus{
+    position: relative;
+    height: 100vh;
+    width: auto;
+    background-color: #161616;
+  }
+  .cont-us{
+    position: relative;
+    left: 45%;
+  }
+  .cont-name{
+    position: relative;
+    height: 50px;
+    width: 578.1px;
+  }
+  .cont-email{
+    position:absolute;
+    height: 50px;
+    width: 578.1px;
+    right: 57%;
+    top: 115%;
+  }
+  .message{
+    position: absolute;
+    height: 50px;
+    width: 578.1px;
+    right: 57%;
+    top: 225%;
+    background-color: #292626;
+  }
+  .cont-btn{
+    position: absolute;
+    width: 578.1px;
+    height: 50px;
+    cursor: pointer;
+    right: 57%;
+    top: 345%;
+    color: #fff;
+    background-color: #003399;
+  }
+  .cont-btn:hover{
+    border-color: rgb(156, 49, 49);
+  }
+  .left-contus{
+    position: relative;
+    top: 30%;
+  }
+  .contus-h{
+    position: relative;
+    left: 10%;
+  }
+  .contus-p1{
+    position: relative;
+    left: 10%;
+    padding-top: 2%;
+  }
+  .contus-p2{
+    position: relative;
+    left: 10%;
+    padding-top: 2%;
+  }
+/* CONTACT US END */
+/* SIGN UP START */
+section.main-signup{
+    position: absolute;
+    height: 150vh;
+    width: 100%;
+    background-color: #161616;
+}
+section.center{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    left: 10%;
+}
+.first-name{
+    position: inherit;
+    top: 68%;
+    height: 50px;
+    width: 956.2px;
+}
+.last-name{
+    position: absolute;
+    top: 130%;
+    height: 50px;
+    width: 956.2px;
+}
+.username{
+    position: absolute;
+    top: 260%;
+    height: 50px;
+    width: 956.2px;
+}
+.email{
+    position: absolute;
+    top: 390%;
+    height: 50px;
+    width: 956.2px;
+}
+.passwd{
+    position: absolute;
+    top: 390%;
+    height: 50px;
+    width: 956.2px;
+}
+.login-here{
+    position: absolute;
+    top: 630%;
+    left: 50%;
+}
+.login-here:hover{
+    color: #003399 !important;
+}
+.signup-btn{
+    position: absolute;
+    top: 530%;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+hr.signup-row{
+    position: inherit;
+    top: 65%;
+    width: 160%;
+}
+/* SIGN UP END */
+/* TOURNAMENT START */
+.tournament-slider {
+    width: 500px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-wrapper {
+    width: calc(300% + 60px); /* 3 slides + 20px margin per slide */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Add visual indicators for live/pending tournaments */
+  .live-tournament {
+    background-color: #f0f0f0;
+    border: 2px solid green;
+  }
+  
+  .pending-tournament {
+    background-color: #f8f8f8;
+    border: 2px solid gray;
+  }
+  
+  /* Buttons */
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+/* TOURNAMENT END */
   /* FOOTER START */
   .footer{
     position: relative;
@@ -144,6 +447,7 @@ section.reset{
     padding-top: 7%;
     height: 23%;
     background-color: #000000;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 .news-let{
