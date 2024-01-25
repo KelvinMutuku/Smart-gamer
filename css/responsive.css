@@ -1,10 +1,50 @@
 /* MEDIA QUERY START */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 768px){
   /* Styles for tablets */
-
+  body {
+    font-size: 16px;
+  }
+/* RESET START */
+  .center{
+    overflow-x: hidden;
+    max-width: 800px;
+  }
+/* RESET END */
+/* SIGNUP START */
+section.center{
+  overflow-x: hidden;
+  max-width: 800px;
+}
+/* SIGNUP END */
+/* INDEX START */
+      .section-page{
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+      .home-h{
+    position: absolute;
+    
+      }
+/* INDEX END */
+/* CONTACT US START */
+.cont-name{
+  position: relative;
+  left: 20%;
+  height: 50px;
+  width: 578.1px;
+}
+/* CONTACT US END */
 }
 @media screen and (max-width: 767px) {
   /* Styles for smartphones */
+  body {
+    font-size: 14px;
+  }
+  /* RESET SECTION START */
+  .center{
+    max-width: 768px;
+  }
+  /* RESET SECTION END */
   /* CONTACT SECTION START*/
 
 /* CONTACT SECTION END */
@@ -53,14 +93,288 @@
   height: 60px;
   color: #fff;
 }
-
 /* RESET END */
-/* LOGIN & SIGNUP SECTION START */
-
-/* LOGIN & SIGNUP SECTION END */
+/* INDEX START */
+.section-page{
+  overflow-x: scroll;
+  width: 100vw;
+  max-width: 100%;
+}
+div .section-page{
+  overflow-x: scroll;
+  max-width: 100%;
+}
+.home-h{
+  position: absolute;
+  font-size: 41px;
+}
+.home-p{
+  position: absolute;
+  top: 74%;
+  left: 3.5%;
+}
+.loginbtn-home{
+  position: relative;
+  left: 25%;
+  top: 8%;
+  padding: 17px 63px;
+  cursor:pointer;
+  color: #fff;
+  background-color: #161616;
+  border:2px solid #003399;
+}
+.sectionh-h1{
+  position: relative;
+  text-align: center;
+  left: 2%;
+}
+.section5-h1{
+  position: relative;
+  text-align: center;
+  top: 30%;
+  font-size: 40px;
+}
+.video-container{
+  top: 7%;
+	width: 350px; 
+	height: 250px; 
+	position: relative; 
+	right: 25% !important;
+	border: 1px; 
+	border-style: ridge; 
+	margin: 0 auto; 
+	background-color: black; 
+}
+.news-lethome{
+  position: relative;
+  top: 25%;
+  left: 2%;
+  width: 45%;
+  height: 53px;
+}
+.submitbtn-home{
+  position: relative;
+  padding: 17px 45px;
+  top: 25%;
+  left: 10%;
+  cursor:pointer;
+  color: #fff;
+  background-color: #003399;
+  border: none;
+}
+/* INDEX END */
+/* LOGIN START */
+.main-login{
+  height: 100vh !important;
+  width: 100vw;;
+  overflow: hidden;
+}
+.log-h{
+  position: inherit;
+  top: 13%;
+  line-height: 26px;
+  font-size: 16px;
+}
+hr.line-log{
+  position: inherit;
+  top: 25%;
+  width: 100%;
+}
+.center-items{
+  position: relative;
+  top: 32%;
+  width: 100%;
+}
+.email-log{
+  position: inherit;
+  top: 68%;
+  height: 50px;
+  width: 349.05px;
+}
+.passwd-log{
+  position: absolute;
+  top: 180%;
+  height: 50px;
+  width: 349.05px;
+  bottom: 8%;
+}
+.remember{
+  position: absolute;
+  top: 320%;
+  left: 8%;
+}
+.signup-here{
+  position: absolute;
+  top: 620%;
+  left: 2%;
+  width: 100%;
+}
+.reset-here{
+  position: absolute;
+  top: 710%;
+  left: 2%;
+}
+.login-btn{
+  position: absolute;
+  top: 390%;
+  height: 50px;
+  width: 349.05px;
+  background-color: #003399;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+}
+hr.login-row{
+  position: absolute;
+  top: 65%;
+  width: 160%;
+}
+/* LOGIN END */
+/* SIGNUP SECTION START */
+.main-signup{
+  position: absolute;
+  height: 100vh !important;
+  width: 100%;
+  overflow-x: hidden;
+}
+.first-name{
+  position: inherit;
+  top: 68%;
+  height: 50px;
+  width: 349.05px;
+}
+.last-name{
+  position: absolute;
+  top: 130%;
+  height: 50px;
+  width: 349.05px;
+}
+.username{
+  position: absolute;
+  top: 260%;
+  height: 50px;
+  width: 349.05px;
+}
+.email{
+  position: absolute;
+  top: 390%;
+  height: 50px;
+  width: 349.05px;
+}
+.passwd{
+  position: absolute;
+  top: 390%;
+  height: 50px;
+  width: 349.05px;
+}
+.login-here{
+  position: absolute;
+  top: 750%;
+  left: 2%;
+}
+.signup-btn{
+  position: absolute;
+  top: 530%;
+  height: 50px;
+  width: 349.05px;
+  background-color: #003399;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+hr.signup-row{
+  position: inherit;
+  top: 65%;
+  width: 160%;
+}
+/* SIGNUP SECTION END */
+/* RESET START */
+section.reset{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #161616;
+}
+.reset-btn{
+  position: relative;
+  top: 50px;
+  width: 349px;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  background-color: #003399;
+  border: none;
+}
+.reset-row{
+  position: inherit;
+  top: 43%;
+  width: 160%;
+}
+.login-here-res{
+  position: absolute;
+  top: 180%;
+  left: 48%;
+}
+.sign-here{
+  position: absolute;
+  top: 180%;
+  left: 75%;
+}
+/* RESET END */
     /* CONTACT SECTION START*/
-
+    .main-contus{
+      height: 50vh;
+      width: 98.75vw;
+      background-color: #292626;
+      overflow: hidden;
+  }
+  .left-contus{
+    position: relative;
+    top: 7%;
+  }
+        .cont-us{
+          position: relative;
+          top: 15%;
+        }
+        .cont-name{
+          position: inherit;
+          height: 50px;
+          right: 25%;
+          width: 289px;
+        }
+        .cont-email{
+          position:absolute;
+          height: 50px;
+          width: 289px;
+          top: 155%;
+        }
+        .message{
+          height: 80px;
+          width: 289px;
+          top: 315%;
+          background-color: #292626;
+          bottom: 13%;
+        }
+        .cont-btn{
+          width: 289px;
+          height: 50px;
+          cursor: pointer;
+          top: 560%;
+          color: #fff;
+          background-color: #003399;
+        }
     /* CONTACT SECTION END */
+    /* TOURNAMENT START */
+    .tournament-1{
+      height: 50vh !important;
+      width: 100vw;
+      overflow: hidden;
+    }
+    .tournament-2{
+      width: 100vw;
+      overflow: hidden;
+    }
+    /* TOURNAMENT END */
     /* FOOTER START */
     .footer{
         position: fixed;
@@ -69,6 +383,9 @@
         height: 50%;
         background-color: rgb(26, 23, 23);
     }
+      .news-let{
+        display: none;
+      }
     .btn-primary{
         border: 3px solid #fff;
         border-radius: 35px;
@@ -76,14 +393,8 @@
     }
     .text-center1{
         position:absolute;
-        left:30%;
+        left:40%;
         top: 2%;
-    }
-    .text-center2{
-        position: absolute;
-        left: 33%;
-        top: 100%;
-        color: #fff;
     }
     /* FOOTER END */
   }
@@ -110,6 +421,9 @@
           height: 50%;
           background-color: rgb(26, 23, 23);
       }
+      .news-let{
+        display: none;
+      }
       .btn-primary{
           border: 3px solid #fff;
           border-radius: 35px;
@@ -119,12 +433,6 @@
           position:absolute;
           left:30%;
           top: 2%;
-      }
-      .text-center2{
-          position: absolute;
-          left: 33%;
-          top: 100%;
-          color: #fff;
       }
       /* FOOTER END */
   }

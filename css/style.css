@@ -98,6 +98,9 @@ body{
     position: relative;
     text-align: center;
     top: 30%;
+    color: #ffffff; 
+    font-size: 80px;
+    font-family: 'Titillium Web';
 }
 .section6-h1{
     position: relative;
