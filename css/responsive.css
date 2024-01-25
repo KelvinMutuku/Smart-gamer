@@ -1,0 +1,131 @@
+/* MEDIA QUERY START */
+@media screen and (max-width: 991px) {
+  /* Styles for tablets */
+
+}
+@media screen and (max-width: 767px) {
+  /* Styles for smartphones */
+  /* CONTACT SECTION START*/
+
+/* CONTACT SECTION END */
+/* BUTTON INPUT CHECKBOX START */
+
+/* LOGIN & SIGNUP SECTION START */
+
+/* LOGIN & SIGNUP SECTION END */
+/* TOURNAMENTS START */
+
+/*TOURNAMENTS END */
+  /* FOOTER START */
+  .footer{
+    position: fixed;
+    top: 93%;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(26, 23, 23);
+}
+.text-center1{
+    position:absolute;
+    left:75%;
+    top: 0px;
+}
+.text-center2{
+    position: absolute;
+    left: -120%;
+    top: 25%;
+    color: #fff;
+    font-size: medium;
+}
+  /* FOOTER END */
+}
+@media screen and (max-width: 575px) {
+    /* Styles for smartphones */
+    /* RESET START */
+    section.reset{
+        position: absolute;
+        height: 150vh;
+        width: 100svw;
+        background-color: #161616;
+    }
+    .email-log{
+  position: relative;
+  width: 190px;
+  height: 60px;
+  color: #fff;
+}
+
+/* RESET END */
+/* LOGIN & SIGNUP SECTION START */
+
+/* LOGIN & SIGNUP SECTION END */
+    /* CONTACT SECTION START*/
+
+    /* CONTACT SECTION END */
+    /* FOOTER START */
+    .footer{
+        position: fixed;
+        top: 91%;
+        width: 100%;
+        height: 50%;
+        background-color: rgb(26, 23, 23);
+    }
+    .btn-primary{
+        border: 3px solid #fff;
+        border-radius: 35px;
+        background-color: #fff;
+    }
+    .text-center1{
+        position:absolute;
+        left:30%;
+        top: 2%;
+    }
+    .text-center2{
+        position: absolute;
+        left: 33%;
+        top: 100%;
+        color: #fff;
+    }
+    /* FOOTER END */
+  }
+  @media screen and (max-width: 375px) {
+    /* Styles for smartphones */
+
+  /* SECTION START */
+
+  /* SECTION END */
+      /* CONTACT SECTION START */
+
+      /* CONTACT SECTION END */
+  /* LOGIN & SIGNUP SECTION START */
+
+  /* LOGIN & SIGNUP SECTION END */
+      /* CONTACT SECTION START*/
+ 
+      /* CONTACT SECTION END */
+        /* FOOTER START */
+        .footer{
+          position: fixed;
+          top: 92%;
+          width: 100%;
+          height: 50%;
+          background-color: rgb(26, 23, 23);
+      }
+      .btn-primary{
+          border: 3px solid #fff;
+          border-radius: 35px;
+          background-color: #fff;
+      }
+      .text-center1{
+          position:absolute;
+          left:30%;
+          top: 2%;
+      }
+      .text-center2{
+          position: absolute;
+          left: 33%;
+          top: 100%;
+          color: #fff;
+      }
+      /* FOOTER END */
+  }
+/* MEDIA QUERY END */

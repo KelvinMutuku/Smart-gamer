@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS LINK START -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="2-scroll-top.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/2-scroll-top.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <!-- CSS LINK END -->
        <!-- Font Awesome Icons Start -->
        <link
@@ -119,7 +120,7 @@ nav ul.active {
 }
   </style>
 </head>
-<body id="top">
+<body>
   <!-- SECTION START -->
   <section class="main-contus">
       <!-- NAVBAR START -->
@@ -159,7 +160,18 @@ nav ul.active {
     <div class="left-contus">
       <h1 class="contus-h" style="color: #ffffff; font-size: 35px; font-family: Titillium Web; ">HAVE A QUESTION?<br>SHOOT AWAY !</h1>
       <p class="contus-p1" style="color: #ffffff; font-size: 17px; font-family: Titillium Web; ">We are waiting for you to fire your question at us</p>
-      <p class="contus-p2" style="color: #ffffff; font-size: 13px; font-family: Rubik; ">Follow us on :</p>
+      <p class="contus-p2" style="color: #ffffff; font-size: 13px; font-family: Rubik; ">Follow us on :                 <button type="button" class="btn-primary">
+        <i class="fa-brands fa-facebook"></i>
+      </button>
+      <button type="button" class="btn-primary">
+        <i class="fa-brands fa-youtube"></i>
+      </button>
+      <button type="button" class="btn-primary">
+        <i class="fab fa-instagram"></i>
+      </button>
+      <button type="button" class="btn-primary">
+        <i class="fab fa-twitter"></i>
+      </button></p>
     </div>
     <form class="cont-us">
      
@@ -173,7 +185,6 @@ nav ul.active {
       
       <button type="submit" class="cont-btn" style="color: #ffffff; font-size: 15px; font-family: Titillium Web; ">Submit</button>
     </form>
-    <img src="up-button.png" id="backtop" onclick="totop()">
   </section>
   <!-- SECTION TWO END -->
   <!-- CONTACT SECTION END -->
@@ -182,12 +193,12 @@ nav ul.active {
             <div class="news-letter">
               <input type="email" name="Subscribe to our news letter" id="" placeholder="Subscribe to our news letter" class="news-let">
             </div>
-            <footer class="text-center1">
+            <footer class="text-center1" style="background-color: transparent;">
                 <button type="button" class="btn-primary">
-                  <i class="fab fa-facebook-f"></i>
+                  <i class="fa-brands fa-facebook"></i>
                 </button>
                 <button type="button" class="btn-primary">
-                  <i class="fab fa-youtube"></i>
+                  <i class="fa-brands fa-youtube"></i>
                 </button>
                 <button type="button" class="btn-primary">
                   <i class="fab fa-instagram"></i>
@@ -202,6 +213,7 @@ nav ul.active {
   <!--SECTION END -->
 </body>
 <!-- JAVASCRIPT LINK START -->
-<script src="app.js"></script>
+<script src="js/app.js"></script>
+<script src="js/3-scroll-top.js"></script>
 <!-- JAVASCRIPT LINK END -->
 </html>

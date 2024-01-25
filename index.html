@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS LINK START -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="2-scroll-top.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/2-scroll-top.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/video.css">
   <!-- CSS LINK END -->
      <!-- Font Awesome Icons Start -->
      <link
@@ -143,7 +145,7 @@ nav ul.active {
               <a href="login.html">Login</a>
             </li>
             <li>
-              <a href="signup.html">Sign-Up</a>
+              <a href="signup.html">Sign Up</a>
             </li>
           </ul>
         </nav>
@@ -184,8 +186,65 @@ nav ul.active {
 <div class="section-page">
   <div class="content-3">
     <h1 class="sectionh-h1" style="color: #ffffff; font-size: 45px; font-family: Titillium Web;">WATCH AND LEARN!</h1>
-    <p class="announcements-p" style="color: #ffffff; font-size: 17px; font-family: Titillium Web;">Smart Gamer E-Sports Gaming the Smart Gamer Way!
-      Make your blood run red at being the champion. The Smart Gamer Champion</p>
+	<!-- Video container  Start-->
+	<div class="video-container"> 
+		<img src= 
+"img/pubg2.jpg"
+			id="video-thumbnail"> 
+		<video id="video"> 
+			
+		<!-- Video source -->
+			<source
+				src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20231020155223/Full-Stack-Development-_-LIVE-Classes-_-GeeksforGeeks.mp4"
+				type="video/mp4"> 
+		</video> 
+		
+		<!-- Controlers continer -->
+		<div class="controls"> 
+			
+		<!-- Left controller div -->
+			<div class="left"> 
+				<button id="skipminus-10"> 
+					<i class="fa-solid fa-backward"></i> 
+				</button> 
+				<button id="play-pause"> 
+					<i class="fa-solid fa-play"></i> 
+				</button> 
+				<button id="skip-10"> 
+					<i class="fa-solid fa-forward"></i> 
+				</button> 
+			</div> 
+			
+	<!-- div for progress bar -->
+			<div class="video-timer"> 
+				<span id="current-time">00:00</span> 
+				<span id="separator">/</span> 
+				<span id="max-duration">00:00</span> 
+			</div> 
+			<div class="playback-line"> 
+				<div class="progress-bar"></div> 
+
+			</div> 
+			
+			<!-- Right controller div -->
+			<div class="right"> 
+				<div class="volume-container"> 
+					<div id="mute"> 
+						<i class="fas fa-volume-up"></i> 
+					</div> 
+					<input type="range"
+						id="volume"
+						min="0"
+						max="1"
+						step="0.01"
+						value="1"> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+	<!-- Video container  END-->
+
   </div>
 </div>
 <!-- SECTION 4 END -->
@@ -203,13 +262,14 @@ nav ul.active {
     <h1 class="section6-h1" style="color: #ffffff; font-size: 54px; font-family: Titillium Web;">SUBSCRIBE TO OUR NEWSLETTER</h1>
     <input type="email" name="Subscribe to our news letter" id="" placeholder="Your Email Address" class="news-lethome">
     <button type="submit" class="submitbtn-home" style="font-family: Titillium Web; font-size: 13px; line-height: 26px; letter-spacing: 0.78px; text-align: start;">SUBSCRIBE</button>
-    <img src="up-button.png" id="backtop" onclick="totop()">
+    <i class="fa-solid fa-up-long" id="backtop" onclick="totop()" style="color: #ffffff;font-size: 24px;"></i>
   </div>
 </div>
 <!-- SECTION 6 END -->
 </body>
 <!-- JAVASCRIPT LINK START -->
-<script src="app.js"></script>
-<script src="3-scroll-top.js"></script>
+<script src="js/app.js"></script>
+<script src="js/3-scroll-top.js"></script>
+<script src="js/video-player.js"></script> 
 <!-- JAVASCRIPT LINK END -->
 </html>
