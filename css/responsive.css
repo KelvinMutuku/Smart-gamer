@@ -107,10 +107,11 @@ div .section-page{
 .home-h{
   position: absolute;
   font-size: 41px;
+  top: 15%;
 }
 .home-p{
   position: absolute;
-  top: 74%;
+  top: 64%;
   left: 3.5%;
 }
 .loginbtn-home{
