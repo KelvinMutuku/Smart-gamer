@@ -42,16 +42,18 @@
     align-items: center;
   }
   nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding-left: 9%;
-    gap: 9rem;
-  }
-  nav a {
-    font-size: 1.8rem;
-    text-decoration: none;
-  }
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 7%;
+  gap: 8rem;
+}
+nav a {
+  position: relative;
+  font-size: 1.8rem;
+  top: 35%;
+  text-decoration: none;
+}
   nav a#logo {
     color: #c0c0c0;
     font-weight: 700;
@@ -62,7 +64,7 @@
     font-weight: 600;
   }
   nav ul a:hover {
-    border-bottom: 4px solid #003399;
+    border-bottom: 5px solid #003399;
   }
   #ham-menu {
     display: none;
@@ -199,9 +201,9 @@
           <div class="footer">
             <div class="news-letter">
               <input type="email" name="Subscribe to our news letter" id="" placeholder="Subscribe to our news letter" class="news-let">
-              <button type="button" class="btn-newsl">
+              <!-- <button type="button" class="btn-newsl">
                 <i class="fa-sharp fa-solid fa-envelope" style="cursor: pointer;"></i>
-              </button>
+              </button> -->
             </div>
             <footer class="text-center1">
                 <button type="button" class="btn-primary">

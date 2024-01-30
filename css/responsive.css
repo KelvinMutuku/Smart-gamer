@@ -96,7 +96,7 @@ section.center{
 /* RESET END */
 /* INDEX START */
 .section-page{
-  overflow-x: scroll;
+  overflow-x: hidden;
   width: 100vw;
   max-width: 100%;
 }

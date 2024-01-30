@@ -8,23 +8,32 @@ body{
     scroll-behavior: smooth;
 }
 /* HOME START */
+.section-page-1{
+    position: relative;
+    height: 100vh;
+    width: 98.75vw;
+    background-image: url(../img/pubg4.jpg);
+    background-color: #161616;
+}
 .section-page{
     height: 100vh;
     width: 98.75vw;
+    overflow-x: hidden !important;
     background-color: #161616;
 }
 .home-h{
-    position: absolute;
+    position: relative;
     top: 35%;
-    left: 10%;
+    text-align: center;
 }
 .home-p{
-    position: absolute;
-    top: 54%;
-    left: 35%;
+    position: relative;
+    top: 44%;
+    text-align: center;
 }
 .content{
     position: relative;
+    padding-top: 5%;
     height: 100vh;
     width: 50vw;
 }
@@ -91,8 +100,7 @@ body{
 }
 .sectionh-h1{
     position: relative;
-    text-align: right;
-    right: 9%;
+    text-align: center;
 }
 .section5-h1{
     position: relative;
@@ -569,11 +577,11 @@ hr.signup-row{
     border-radius: 35px;
     background-color: #fff;
 }
-.btn-newsl{
+/* .btn-newsl{
     position: absolute;
     top: 22%;
   left:70%;
-}
+} */
 .btn-primary:hover{
     color: #003399;
     cursor: pointer;
